@@ -1,0 +1,78 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f0f5ff; /* Светло-голубой фон */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+  margin: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Анимация при наведении */
+}
+
+.body:hover {
+  transform: translateY(-3px); /* Легкое поднятие при наведении */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Увеличенная тень */
+}
+
+.text {
+  color: #ea1212; /* Тёмно-синий цвет текста */
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 5px; /* Отступ между текстом и полем ввода */
+  text-transform: uppercase; /* Верхний регистр */
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  border: 2px solid #ea1212; /* Синяя граница */
+  border-radius: 8px;
+  padding: 8px;
+  width: 50px; /* Фиксированная ширина для поля ввода */
+  font-size: 16px;
+  margin-right: 10px; /* Отступ между полем ввода и ползунком */
+  text-align: center;
+  background-color: #ffffff; /* Белый фон */
+  transition: border-color 0.2s ease; /* Анимация границы */
+}
+
+.number:focus {
+  border-color: #ea1212; /* Тёмно-синяя граница при фокусе */
+  outline: none; /* Убираем стандартный outline */
+}
+
+.customRange {
+  position: relative;
+  width: 15px; /* Ширина ползунка */
+  height: 70px; /* Высота ползунка */
+  background: linear-gradient(to bottom, #f33737, #eab7b7); /* Градиентный фон */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease; /* Анимация фона */
+}
+
+.customRange:hover {
+  background: linear-gradient(to bottom, #ea1212, #ea3131); /* Тёмный градиент при наведении */
+}
+
+.thumb {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #dce734; /* Синий цвет ползунка */
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(50%); /* Центрируем ползунок */
+  transition: transform 0.2s ease, background 0.2s ease; /* Анимация */
+}
+
+.thumb:hover {
+  background: #fffb00; /* Тёмно-синий цвет при наведении */
+}
